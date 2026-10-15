@@ -1,0 +1,91 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f6fb;
+    color: #243047;
+}
+
+header {
+    background: #173b67;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+.form-section, .opportunity-card {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccd3df;
+    border-radius: 5px;
+}
+
+textarea {
+    min-height: 80px;
+}
+
+button {
+    padding: 10px 14px;
+    margin: 12px 5px 0 0;
+    border: none;
+    border-radius: 5px;
+    background: #2459a9;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #173b67;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+#message {
+    font-weight: bold;
+}
+
+.error {
+    color: #b42318;
+}
+
+.success {
+    color: #187443;
+}
+
+.badge {
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 95%;
+    }
+}

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Research Opportunity Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>University Research Opportunity Portal</h1>
+        <p>Explore and manage university research opportunities</p>
+    </header>
+
+    <main>
+        <section class="form-section">
+            <h2 id="formTitle">Add Research Opportunity</h2>
+
+            <form id="opportunityForm">
+                <input type="hidden" id="opportunityId">
+
+                <label>Title *</label>
+                <input id="title" required>
+
+                <label>Description *</label>
+                <textarea id="description" required></textarea>
+
+                <label>Research Area *</label>
+                <input id="research_area" required>
+
+                <label>Faculty Name *</label>
+                <input id="faculty_name" required>
+
+                <label>Department *</label>
+                <input id="department" required>
+
+                <label>Required Skills *</label>
+                <input id="required_skills" required>
+
+                <label>Available Positions *</label>
+                <input id="available_positions" type="number" min="1" required>
+
+                <label>Application Deadline *</label>
+                <input id="application_deadline" type="date" required>
+
+                <button type="submit">Save Opportunity</button>
+                <button type="button" id="cancelEdit" hidden>Cancel Edit</button>
+            </form>
+
+            <p id="message" role="status"></p>
+        </section>
+
+        <section>
+            <h2>Research Opportunities</h2>
+            <button type="button" id="refreshButton">Refresh List</button>
+            <div id="opportunityList">Loading opportunities...</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
